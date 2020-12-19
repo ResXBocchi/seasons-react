@@ -15,14 +15,22 @@ class App extends React.Component {
         );
     }
 
-    render(){
+    renderContent(){
         if (this.state.lat && !this.state.errorMessage){
             return <SeasonDisplay lat={this.state.lat}/>
         }else if (!this.state.lat && this.state.errorMessage){
             return <div>Error: {this.state.errorMessage}</div>
         }else{
-            return <Spinner/>;
+            return <Spinner message='Por favor, aceite o acesso à sua localização.'/>;
         }
+    }
+
+    render(){
+      return(
+          <div>
+              {this.renderContent()}
+          </div>
+      )
     }
 } 
 
