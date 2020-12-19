@@ -7,7 +7,7 @@ const seasonConfig = {
         iconName:'massive sun icon'
     },
     winter:{
-        text:'Bora pra praia!',
+        text:'Cadê meu casaco!?',
         iconName:'massive snowflake icon'
     }
 }
