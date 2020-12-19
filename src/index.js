@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import SeasonDisplay from './seasondisplay'
 import 'semantic-ui-css/semantic.min.css';
+import Spinner from './Spinner'
 
 class App extends React.Component {
 
@@ -20,7 +21,7 @@ class App extends React.Component {
         }else if (!this.state.lat && this.state.errorMessage){
             return <div>Error: {this.state.errorMessage}</div>
         }else{
-            return <div>Loading</div>
+            return <Spinner/>;
         }
     }
 } 
