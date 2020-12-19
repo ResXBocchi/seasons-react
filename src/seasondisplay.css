@@ -1,0 +1,10 @@
+.icon-left{
+    position:abolute;
+    top:10px;
+    left:10px;
+}
+.icon-right{
+    position:abolute;
+    bottom:10px;
+    right:10px;
+}
